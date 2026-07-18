@@ -1,0 +1,98 @@
+.page_section {
+  min-block-size: calc(100dvh - var(--header-height) - var(--footer-height) + 24px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block-start: 2rem;
+  padding-block-end: calc(2rem + 24px);
+}
+
+.vertical-align-start{
+  justify-content: start;
+}
+
+.page_section-candidate {
+  background-image: var(--gradient-candidate);
+  background-attachment: fixed;
+}
+
+.page_section-company {
+  background-image: var(--gradient-company);
+  background-attachment: fixed;
+}
+
+.page_section-admin {
+  background-image: var(--gradient-admin);
+  background-attachment: fixed;
+}
+
+.page_section-offers {
+  background-image: var(--gradient-offers);
+  background-attachment: fixed;
+}
+
+.page_section-packs {
+  background-image: var(--gradient-company);
+  background-attachment: fixed;
+}
+
+.page_section-homepage {
+  background-image:
+    linear-gradient(rgb(0 0 0 / 40%)),
+    url('../../assets/backgroundHome/homePage.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.page_section-login {
+  background-image:
+    linear-gradient(rgb(0 0 0 / 40%)),
+    url('../../assets/backgrounds/login.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.page_section-recoverPassword {
+  background-image:
+    linear-gradient(rgb(0 0 0 / 40%)),
+    url('../../assets/backgrounds/recoverpassword.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.page_section-resetPassword {
+  background-image:
+    linear-gradient(rgb(0 0 0 / 40%)),
+    url('../../assets/backgrounds/resetpassword.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.page_section-homeregpage {
+  background-image:
+    linear-gradient(rgb(0 0 0 / 40%)),
+    url('../../assets/backgroundHome/home2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.page_section-regcandidate {
+  background-image: linear-gradient(rgb(0 0 0 / 40%)), url('../../assets/backgroundHome/homePage.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.page_section-regcompany {
+  background-image: linear-gradient(rgb(0 0 0 / 40%)), url('../../assets/backgroundHome/homePage.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.page_section-validation {
+  background-image:
+    linear-gradient(rgb(0 0 0 / 40%)),
+    url('../../assets/backgroundHome/home2.png');
+  background-size: cover;
+  background-position: center;
+}

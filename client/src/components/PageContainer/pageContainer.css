@@ -1,0 +1,6 @@
+.page_container {
+  max-inline-size: 1600px;
+  inline-size: 100%;
+  padding-inline: 1rem;
+  margin: 0 auto;
+}

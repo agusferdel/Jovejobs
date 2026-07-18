@@ -1,0 +1,45 @@
+.checkboxgroupjj {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  & .checkboxgroupjj_label {
+    font-size: var(--form-label-size);
+    font-weight: bold;
+    color: var(--form-control-label-color);
+    margin: 0;
+  }
+
+  & .checkboxgroupjj_options {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  & .checkboxgroupjj_item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+
+    & .checkboxgroupjj_input {
+      inline-size: 1rem;
+      block-size: 1rem;
+      flex-shrink: 0;
+      accent-color: var(--form-control-border-color-hover);
+      cursor: pointer;
+    }
+
+    & .checkboxgroupjj_itemlabel {
+      font-size: var(--form-text-size);
+      color: var(--form-control-label-color);
+      cursor: pointer;
+    }
+  }
+
+  & .checkboxgroupjj_error {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--text-color-message);
+    margin: 0;
+  }
+}

@@ -1,0 +1,256 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/*
+:root {
+  /* Cambios para que el footer siempre vaya al final */
+/*display: flex;
+  /*flex-direction: column;
+  /* min-height: 100vh;*/
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  src: url('./assets/fonts/bricolage-grotesque/BricolageGrotesque-Regular.woff2')
+    format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  src: url('./assets/fonts/bricolage-grotesque/BricolageGrotesque-Medium.woff2')
+    format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  src: url('./assets/fonts/bricolage-grotesque/BricolageGrotesque-SemiBold.woff2')
+    format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  src: url('./assets/fonts/bricolage-grotesque/BricolageGrotesque-Bold.woff2')
+    format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Anton';
+  src: url('./assets/fonts/anton/Anton-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Fonts */
+  --font-primary: 'Bricolage Grotesque', sans-serif;
+  --font-secondary: 'Anton', sans-serif;
+
+  /* Navbar */
+  --font-color-navbar: #1c1c1c;
+  --bg-color-navbar: #fbfbfb90;
+  --btn-color-navbar: #fc3fd9;
+  --header-height: 86px;
+
+  /* Footer */
+  --bg-color-footer: #1c1c1c;
+  --bg-containers-footer: #161616;
+  --bg-containers-footer-hover: #3a3a3a;
+  --font-color-footer: #f6f9fc;
+  --font-color-footer-2: #aaaaaa;
+  --font-color-footer-3: #666666;
+  --footer-height: 261px;
+
+  /* Candidate status colors */
+  --text-status-applied: #00ddff;
+
+  /* Font colors */
+  --text-light: #f6f9fc;
+  --text-dark: #1c1c1c;
+  --text-gray: #475467;
+  --text-light-gray: #667085;
+  --text-color-3: #fc3fd9;
+  --text-color-4: #00ddff;
+  --text-color-5: #13ce66;
+  --text-color-6: #6c2dea;
+  --text-color-7: #fffa01;
+  --text-color-message: #d92d20;
+
+  /* Backgrounds */
+  --bg-glass: rgba(255, 255, 255, 0.45);
+  --bg-light: #ffffff;
+  --bg-dark: #1c1c1c;
+  --bg-candidate: #00ddff;
+  --bg-company: #6c2dea;
+  --bg-admin: #13ce66;
+  --bg-offers: #f9a749;
+  --bg-packs: #fffa01;
+
+  /* Gradients backgrounds */
+  --gradient-candidate:
+    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    linear-gradient(
+      to top,
+      var(--bg-candidate),
+      var(--bg-light),
+      var(--bg-light)
+    );
+  --gradient-company:
+    linear-gradient(rgba(255, 255, 255, 0.4)),
+    linear-gradient(to top, var(--bg-company), var(--bg-light), var(--bg-light));
+  --gradient-admin:
+    linear-gradient(rgba(255, 255, 255, 0.5)),
+    linear-gradient(to top, var(--bg-admin), var(--bg-light), var(--bg-light));
+  --gradient-offers:
+    linear-gradient(rgba(255, 255, 255, 0.4)),
+    linear-gradient(to top, var(--bg-offers), var(--bg-light), var(--bg-light));
+
+  --gradient-packs:
+    linear-gradient(rgba(255, 255, 255, 0.4)),
+    linear-gradient(to top, var(--bg-packs), var(--bg-light), var(--bg-light));
+  /* Status backgrounds */
+  --bg-status-applied-: #eff8ff;
+  --bg-status-shortlisted: #d9f9e5;
+  --bg-status-rejected: #fecaca;
+
+  /* Shadows */
+  --shadows-candidate: #00ddff;
+  --shadows-company: #6c2dea;
+  --shadows-admin: #13ce66;
+  --shadows-offers: #f9a749;
+  --shadow-properties: 0px 4px 20px 0px;
+
+  /* Border radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-xxl: 24px;
+
+  /* Paddings */
+  --padding-buttons: 6px 16px;
+  --padding-buttons-lg: 8px 24px;
+  --padding-buttons-xl: 12px 32px;
+  --padding-cards: 16px;
+  --padding-containers: 24px 32px;
+  --padding-form: var(--padding-containers);
+
+  /* Button colors */
+  --btn-color-light: #f6f9fc;
+  --btn-color-dark: #1c1c1c;
+  --btn-color-1: #fc3fd9;
+  --btn-color-2: #fffa01;
+  --btn-color-3: #13ce66;
+  --btn-color-4: #d92d20;
+  --btn-color-5: #5f20b6;
+  --btn-color-6: #f9a749;
+
+  /* Form */
+  --form-bg-color-light: #f6f9fc;
+  --form-bg-color-glass: #ffffff80;
+  --form-label-size: 0.8rem;
+  --form-text-size: 0.8rem;
+
+  --form-control-label-color: #1c1c1c;
+  --form-control-text-color: #1c1c1c;
+  --form-control-text-placeholder: #aaaaaa;
+  --form-control-border-color: #aaaaaa;
+  --form-control-border-radius: 8px;
+  --form-control-border-color-hover: #fc3fd9;
+  --form-control-box-shadow-hover: 0 0 0 3px rgba(252, 63, 217, 0.1);
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--btn-color-1) transparent;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--btn-color-1) transparent;
+  scrollbar-gutter: stable transparent;
+}
+
+body {
+  font-family: var(--font-primary);
+}
+
+:where(body, h1, h2, h3, p) {
+  margin: 0;
+}
+
+main {
+  background-attachment: fixed;
+  justify-content: center;
+  padding-top: var(--header-height);
+  flex: 1;
+
+  @media (width < 780px) {
+    padding-top: 0;
+  }
+}
+
+p {
+  line-height: 1.5;
+  text-wrap: pretty;
+}
+
+.toggle-switch {
+  width: 52px;
+  height: 28px;
+  border-radius: 999px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  border: 1.5px solid #000;
+  background: transparent;
+  padding: 0;
+}
+
+.toggle-switch::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+/* ON */
+.toggle-switch.on {
+  background-color: #000;
+}
+
+.toggle-switch.on::before {
+  left: 27px;
+  background-color: #fff;
+}
+
+/* OFF */
+.toggle-switch.off {
+  background-color: #fff;
+}
+
+.toggle-switch.off::before {
+  left: 3px;
+  background-color: #000;
+}

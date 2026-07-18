@@ -1,0 +1,268 @@
+.btnjj {
+  border: none;
+  padding: var(--padding-buttons-lg);
+  font-size: 1rem;
+  cursor: pointer;
+
+  &.btnjj-primary {
+    background-color: var(--btn-color-1);
+    border-radius: var(--radius-xxl);
+    color: var(--text-light);
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: var(--btn-color-dark);
+      color: var(--btn-color-light);
+    }
+  }
+
+  &.btnjj-secondary {
+    background-color: transparent;
+    border: 1px solid var(--btn-color-dark);
+    border-radius: var(--radius-xxl);
+    color: var(--text-dark);
+    transition:
+      background-color 0.5s ease,
+      color 0.5s ease;
+
+    &:hover {
+      background-color: var(--btn-color-dark);
+      color: var(--text-light);
+    }
+  }
+
+  &.btnjj-tertiary {
+    background-color: var(--btn-color-5);
+    border-radius: var(--radius-xxl);
+    color: var(--text-light);
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: var(--btn-color-dark);
+    }
+  }
+  &.btnjj-black {
+    background-color: var(--btn-color-dark);
+    border-radius: var(--radius-xxl);
+    color: var(--text-light);
+    transition:
+      background-color 0.5s ease,
+      color 0.5s ease;
+
+    &:hover {
+      background-color: var(--btn-color-light);
+      color: var(--text-dark);
+    }
+  }
+
+  &.btnjj-white {
+    background-color: var(--text-light);
+    border-radius: var(--radius-lg);
+    color: var(--btn-color-dark);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    transition:
+      background-color 0.5s ease,
+      color 0.5s ease;
+
+    &:hover {
+      background-color: var(--text-dark);
+      color: var(--btn-color-light);
+    }
+  }
+
+  &.btnjj-yellow {
+    background-color: var(--btn-color-2);
+    border-radius: var(--radius-xxl);
+    color: var(--text-dark);
+    transition:
+      background-color 0.5s ease,
+      color 0.5s ease;
+
+    &:hover {
+      background-color: var(--btn-color-light);
+      color: var(--text-dark);
+    }
+  }
+
+  &.btnjj-delete {
+    background-color: var(--btn-color-4);
+    border-radius: var(--radius-lg);
+    color: var(--text-light);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: var(--btn-color-dark);
+    }
+  }
+
+  &.btnjj-active {
+    background-color: var(--btn-color-3);
+    border-radius: var(--radius-lg);
+    color: var(--text-light);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: var(--btn-color-dark);
+    }
+  }
+
+  &.btnjj-disabled {
+    background-color: var(--text-light);
+    border-radius: var(--radius-lg);
+    color: var(--text-gray);
+    box-shadow: rgba(0, 0, 0, 0.05) 0 2px 6px;
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+    transition:
+      background-color 0.5s ease,
+      color 0.5s ease,
+      opacity 0.3s ease,
+      box-shadow 0.3s ease;
+
+    &:hover {
+      background-color: var(--text-light);
+      color: var(--text-gray);
+      box-shadow: rgba(0, 0, 0, 0.05) 0 2px 6px;
+    }
+  }
+
+  &.btnjj-content-primary {
+    background-color: var(--btn-color-1);
+    border-radius: var(--radius-lg);
+    color: var(--text-light);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: var(--btn-color-dark);
+    }
+  }
+  &.btnjj-yellow {
+    background-color: var(--btn-color-2);
+    border-radius: var(--radius-xxl);
+    color: var(--text-dark);
+    transition:
+      background-color 0.5s ease,
+      color 0.5s ease;
+
+    &:hover {
+      background-color: var(--btn-color-light);
+      color: var(--text-dark);
+    }
+  }
+
+  &.btnjj-content-secondary {
+    background-color: var(--btn-color-dark);
+    border-radius: var(--radius-lg);
+    color: var(--text-light);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    transition:
+      background-color 0.5s ease,
+      color 0.5s ease;
+
+    &:hover {
+      background-color: var(--btn-color-light);
+      color: var(--text-dark);
+    }
+  }
+
+  &.btnjj-content-tertiary {
+    background-color: var(--btn-color-5);
+    border-radius: var(--radius-lg);
+    color: var(--text-light);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: var(--btn-color-dark);
+    }
+  }
+
+  &.btnjj-content-company {
+    background-color: var(--btn-color-2);
+    border-radius: var(--radius-lg);
+    color: var(--text-dark);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: var(--btn-color-5);
+      color: var(--text-light);
+    }
+  }
+
+  &.btnjj-content-offer {
+    background-color: var(--btn-color-6);
+    border-radius: var(--radius-lg);
+    color: var(--text-dark);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: var(--btn-color-dark);
+      color: var(--text-light);
+    }
+  }
+
+  &.btnjj-sidebar-admin-active {
+    background-color: var(--btn-color-3);
+    border-radius: var(--radius-xxl);
+    padding: var(--padding-buttons-xl);
+    color: var(--text-light);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+
+    &:hover {
+      background-color: var(--btn-color-dark);
+      color: var(--btn-color-light);
+    }
+  }
+
+  &.btnjj-sidebar-admin {
+    background-color: var(--btn-color-light);
+    border-radius: var(--radius-xxl);
+    padding: var(--padding-buttons-xl);
+    color: var(--text-dark);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    transition:
+      background-color 0.5s ease,
+      color 0.5s ease;
+
+    &:hover {
+      background-color: var(--btn-color-dark);
+      color: var(--btn-color-light);
+    }
+  }
+
+  &.btnjj-content-quaternary {
+    background-color: var(--btn-color-dark);
+    border-radius: var(--radius-lg);
+    color: var(--text-light);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    transition:
+      background-color 0.5s ease,
+      color 0.5s ease;
+
+    &:hover {
+      background-color: var(--btn-color-3);
+      color: var(--text-dark);
+    }
+  }
+
+  &.btnjj-content-delete {
+    background-color: var(--btn-color-dark);
+    border-radius: var(--radius-lg);
+    color: var(--text-light);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    transition:
+      background-color 0.5s ease,
+      color 0.5s ease;
+
+    &:hover {
+      background-color: var(--btn-color-4);
+      color: var(--text-light);
+    }
+  }
+}

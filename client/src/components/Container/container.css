@@ -1,0 +1,13 @@
+.containerjj {
+  inline-size: 100%;
+  padding: var(--padding-containers);
+  border-radius: var(--radius-xxl);
+  background: var(--bg-glass);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  &.public-container {
+    inline-size: auto;
+  }
+}

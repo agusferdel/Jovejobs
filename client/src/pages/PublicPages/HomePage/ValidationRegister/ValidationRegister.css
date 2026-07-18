@@ -1,0 +1,27 @@
+.validation{
+  text-align: center;
+
+  h2{
+    color: var(--text-color-3);
+    font-weight: 900;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    
+    
+  }
+  h5{
+    font-weight: 800;
+    span{
+      color: var(--text-color-3);
+  }
+  }
+  p{
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+  }
+}
+.card-validation{
+  display: flex;
+  justify-content: center; 
+  padding: 2rem;
+}

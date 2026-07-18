@@ -1,0 +1,164 @@
+.company-offers-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.company-offers-card,
+.company-offers-info-card {
+  width: 100%;
+}
+
+.company-offers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.company-offers-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.company-offers-text h2 {
+  margin: 0;
+}
+
+.company-offers-text p {
+  margin: 0;
+  color: var(--text-gray);
+}
+
+.company-offers-side {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.offers-left-label {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: right;
+}
+
+.offers-left-label span {
+  display: inline-block;
+}
+
+.company-offers-info-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 130px;
+  justify-content: center;
+}
+
+.company-offers-info-card h2 {
+  margin: 0;
+}
+
+.company-offers-info-card p {
+  margin: 0;
+  color: var(--text-gray);
+}
+
+.company-offers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.company-offer-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.company-offer-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-inline-size: 0;
+}
+
+.company-offer-item-info h3 {
+  margin: 0;
+}
+
+.company-offer-item-info p {
+  margin: 0;
+  color: var(--text-gray);
+}
+
+.company-offer-item-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 992px) {
+  .company-offers {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .company-offers-side {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .offers-left-label {
+    text-align: left;
+  }
+
+  .company-offer-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .company-offer-item-actions {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 640px) {
+  .company-offers-side {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .company-offer-item-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .company-offer-item-actions button {
+    width: 100%;
+  }
+}
+
+.company-offer-item .offer-inactive {
+  opacity: 0.6;
+}
+.badge-inactive {
+  color: var(--text-color-message);
+  font-size: 14px;
+  font-weight: bold;
+}
+.badge-active {
+  color: var(--text-color-5);
+  font-size: 14px;
+  font-weight: bold;
+}
+.offer-inactive {
+  opacity: 0.4;
+  filter: grayscale(100%);
+}

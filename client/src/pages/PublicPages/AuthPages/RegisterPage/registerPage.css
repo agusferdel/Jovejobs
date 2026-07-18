@@ -1,0 +1,21 @@
+.input-password-wrapper {
+  position: relative;
+  width: 100%; 
+}
+
+
+.eye-icon-img {
+  position: absolute;
+  right: 0.8rem;
+  top: 65%;              
+  transform: translateY(-50%);
+  width: 1.25rem;
+  height: auto;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.6;  
+  transition: opacity 0.15s ease;
+}
+.eye-icon-img:hover {
+  opacity: 1;
+}

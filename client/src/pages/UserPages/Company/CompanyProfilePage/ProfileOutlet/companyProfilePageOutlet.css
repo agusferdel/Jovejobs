@@ -1,0 +1,146 @@
+.company-profile-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.company-profile-header-card {
+  width: 100%;
+}
+
+.company-profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.company-profile-header h2 {
+  margin: 0 0 8px;
+}
+
+.company-profile-header p {
+  margin: 0;
+  color: var(--text-gray);
+}
+
+.company-profile-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.company-profile-top-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 320px) minmax(0, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+.company-logo-card,
+.company-description-card {
+  height: 100%;
+}
+
+.company-logo-wrapper {
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-main-logo {
+  max-width: 180px;
+  max-height: 140px;
+  object-fit: contain;
+}
+
+.company-description-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.company-description-card h3 {
+  margin: 0;
+}
+
+.company-description-box {
+  flex: 1;
+  padding: 16px;
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.company-description-box p {
+  margin: 0;
+  color: var(--text-gray);
+  line-height: 1.6;
+}
+
+.company-data-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.company-data-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.company-data-card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.company-data-card input {
+  width: 100%;
+  min-width: 0;
+  padding: 14px 16px;
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.4);
+  color: var(--text-gray);
+  outline: none;
+}
+
+.company-data-card input:read-only {
+  cursor: default;
+}
+
+@media (max-width: 1100px) {
+  .company-profile-top-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .company-data-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .company-profile-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .company-profile-header-actions {
+    width: 100%;
+  }
+
+  .company-profile-header-actions button {
+    width: 100%;
+  }
+
+  .company-logo-wrapper {
+    min-height: 180px;
+  }
+
+  .company-data-grid {
+    grid-template-columns: 1fr;
+  }
+}

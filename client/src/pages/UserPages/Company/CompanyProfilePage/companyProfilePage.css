@@ -1,0 +1,135 @@
+.company-mobile-nav {
+  display: none;
+}
+
+.company-flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.company-layout-page {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  gap: 24px;
+  width: min(1580px, 100%);
+  margin: auto;
+  align-items: start;
+}
+
+.company-sidebar {
+  inline-size: 100%;
+  position: sticky;
+  top: 100px;
+  align-self: start;
+}
+
+.company-main {
+  inline-size: 100%;
+  min-inline-size: 0;
+}
+
+.company-sidebar-container {
+  padding: 20px 16px;
+}
+
+.company-main-container {
+  inline-size: 100%;
+  margin-block-end: 2.5rem;
+}
+
+.company-sidebar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.company-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.company-logo-profile {
+  inline-size: 52px;
+  block-size: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.company-sidebar-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+  padding: 12px;
+  border-radius: var(--radius-xl);
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.company-sidebar-footer-logo {
+  flex-shrink: 0;
+}
+
+.company-footer-logo-img {
+  inline-size: 44px;
+  block-size: 44px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.company-sidebar-footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-inline-size: 0;
+}
+
+.company-footer-title {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.company-footer-status {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--text-gray);
+  line-height: 1.2;
+}
+
+@media (max-width: 992px) {
+  .profile-company {
+    padding-inline: 10px;
+  }
+
+  .company-mobile-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    width: min(1580px, 100%);
+    margin: 0 auto 16px;
+  }
+
+  .mobile-nav-button {
+    inline-size: 100%;
+  }
+
+  .company-layout-page {
+    grid-template-columns: 1fr;
+    width: min(1580px, 100%);
+  }
+
+  .company-sidebar {
+    display: none;
+  }
+
+  .company-main {
+    grid-column: 1 / -1;
+  }
+
+  .btn-Offer {
+    display: flex;
+    justify-content: center;
+  }
+}

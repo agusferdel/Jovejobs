@@ -1,0 +1,116 @@
+.public-company-profile-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.public-company-profile-card,
+.public-company-offer-item,
+.public-company-offer-empty {
+  width: 100%;
+}
+
+.public-company-profile-card {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 24px;
+  align-items: center;
+  padding: 24px;
+}
+
+.public-company-profile-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.public-company-profile-left h1 {
+  margin: 0;
+}
+
+.public-company-profile-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.public-company-logo {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.public-company-description,
+.public-company-offer-info p {
+  margin: 0;
+  color: var(--text-gray);
+}
+
+.public-company-active-count {
+  margin: 0;
+  font-weight: 700;
+}
+
+.public-company-offers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.public-company-offer-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.public-company-offer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-inline-size: 0;
+}
+
+.public-company-offer-info h3 {
+  margin: 0;
+}
+
+.public-company-offer-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.public-company-offer-empty {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .public-company-profile-card {
+    grid-template-columns: 1fr;
+  }
+
+  .public-company-profile-right {
+    text-align: center;
+  }
+
+  .public-company-offer-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .public-company-offer-actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .public-company-offer-actions .btnjj {
+    width: 100%;
+  }
+}

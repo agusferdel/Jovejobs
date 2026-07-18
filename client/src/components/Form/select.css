@@ -1,0 +1,35 @@
+.selectjj {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  & .selectjj_label {
+    font-size: var(--form-label-size);
+    font-weight: bold;
+    color: var(--form-control-label-color);
+  }
+
+  & .selectjj_select {
+    border: 1.5px solid var(--form-control-border-color);
+    border-radius: var(--form-control-border-radius);
+    padding: 0.6rem 0.8rem;
+    font-size: var(--form-text-size);
+    color: var(--form-control-text-color);
+    outline: none;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+    &:focus {
+      border-color: var(--form-control-border-color-hover);
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    }
+  }
+
+  & .selectjj_error {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--text-color-message);
+    margin: 0;
+  }
+}

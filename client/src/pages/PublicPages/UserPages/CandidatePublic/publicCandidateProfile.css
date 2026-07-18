@@ -1,0 +1,226 @@
+.candidate-layout {
+/*   background-image: var(--gradient-candidate);
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 12px 40px; */
+}
+
+.candidate-layout > .public-container,
+.candidate-layout > .containerjj {
+  width: min(1580px, 100%);
+  margin: 0 auto;
+}
+
+.candidate-header-card {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.candidate-card {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr) auto;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.candidate-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.candidate-info h3,
+.candidate-info h4 {
+  margin: 0;
+}
+
+.candidate-info p {
+  margin: 8px 0 0;
+  font-size: 20px;
+  inline-size: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.candidate-info span {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.candidate-card-action {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.candidate-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
+  gap: 20px;
+  align-items: start;
+  margin-top: 20px;
+}
+
+.candidate-left,
+.candidate-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+}
+
+.candidate-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.candidate-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.candidate-flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cardjj-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.cl-lighter {
+  color: var(--text-light-gray);
+}
+
+.cl-light {
+  color: var(--text-gray);
+}
+
+.language-level {
+  display: inline-block;
+  background: var(--bg-status-shortlisted);
+  padding: var(--padding-buttons);
+  border-radius: var(--radius-xxl);
+  border: 1px solid var(--text-color-5);
+  color: var(--text-color-5);
+}
+
+.status-on {
+  display: inline-block;
+  background: var(--bg-status-shortlisted);
+  padding: var(--padding-buttons);
+  border-radius: var(--radius-xxl);
+  border: 1px solid var(--text-color-5);
+  text-align: center;
+  color: var(--text-color-5);
+}
+
+.status-off {
+  display: inline-block;
+  background: var(--bg-status-rejected);
+  padding: var(--padding-buttons);
+  border-radius: var(--radius-xxl);
+  border: 1px solid var(--text-color-message);
+  text-align: center;
+  color: var(--text-color-message);
+}
+
+.status-public {
+  display: inline-block;
+  background: var(--bg-status-applied-);
+  padding: var(--padding-buttons);
+  border-radius: var(--radius-xxl);
+  border: 1px solid var(--text-color-4);
+  text-align: center;
+  color: var(--text-color-4);
+}
+
+.state-profile {
+  cursor: default;
+}
+
+.candidate-add {
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  margin: 6px 0;
+}
+
+@media (max-width: 1100px) {
+  .candidate-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .candidate-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 900px) {
+  .candidate-card {
+    grid-template-columns: 96px minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .candidate-card-action {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+  }
+
+  .profile-img {
+    width: 96px;
+    height: 96px;
+  }
+
+  .candidate-profile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .candidate-layout {
+    padding: 100px 10px 32px;
+  }
+
+  .candidate-card {
+    grid-template-columns: 1fr;
+  }
+
+  .candidate-card-action,
+  .candidate-card-action button,
+  .candidate-add button {
+    width: 100%;
+  }
+
+  .cardjj-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

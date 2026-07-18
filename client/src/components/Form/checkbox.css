@@ -1,0 +1,30 @@
+.checkboxjj {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+
+  & .checkboxjj_input {
+    inline-size: 1rem;
+    block-size: 1rem;
+    flex-shrink: 0;
+    accent-color: var(--form-control-border-color-hover);
+    cursor: pointer;
+  }
+
+  & .checkboxjj_label {
+    font-size: var(--form-text-size);
+    font-weight: normal;
+    color: var(--form-control-label-color);
+    cursor: pointer;
+  }
+
+  & .checkboxjj_error {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--text-color-message);
+    margin: 0;
+    inline-size: 100%;
+  }
+}

@@ -1,0 +1,23 @@
+.formjj{
+  padding-inline: 2rem;
+}
+
+.title-Form-Offer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.warning-form-offer {
+  text-align: center;
+}
+
+.formOfferSize {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}

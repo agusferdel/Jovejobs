@@ -1,0 +1,157 @@
+.admin-candidate-applications-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.admin-candidate-applications-header-card,
+.admin-candidate-applications-filters-card {
+  width: 100%;
+}
+
+.admin-candidate-applications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.admin-candidate-applications-header h2 {
+  margin: 0 0 8px 0;
+}
+
+.admin-candidate-applications-header p {
+  margin: 0;
+  color: var(--text-gray);
+}
+
+.admin-candidate-applications-header-actions {
+  flex-shrink: 0;
+}
+
+.admin-candidate-applications-filters {
+  display: flex;
+  align-items: end;
+  gap: 16px;
+}
+
+.admin-candidate-applications-search {
+  flex: 1;
+}
+
+.admin-candidate-applications-clear {
+  flex-shrink: 0;
+}
+
+.admin-candidate-applications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.admin-candidate-application-item {
+  width: 100%;
+}
+
+.admin-candidate-application-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.admin-candidate-application-main {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.admin-candidate-application-main h3 {
+  margin: 0;
+}
+
+.application-admin-company,
+.application-admin-date,
+.application-admin-modality {
+  margin: 0;
+  color: var(--text-gray);
+}
+
+.admin-candidate-application-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.admin-candidate-application-side {
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.is-contacted {
+  font-weight: bold;
+  color: #2f8f46;
+}
+
+.is-not-contacted {
+  font-weight: bold;
+  color: #d9534f;
+}
+
+.application-admin-badge {
+  display: inline-block;
+  padding: var(--padding-buttons);
+  border-radius: var(--radius-xxl);
+  text-align: center;
+  font-weight: 700;
+}
+
+.status-1 {
+  color: #175cd3;
+  background-color: #eff8ff;
+}
+
+.status-2 {
+  color: #385d3e;
+  background-color: #d9ffdf;
+}
+
+.status-3 {
+  color: #491818;
+  background-color: #ffb5b5;
+}
+
+.offer-inactive {
+  opacity: 0.55;
+  filter: grayscale(100%);
+}
+
+@media (max-width: 992px) {
+  .admin-candidate-applications-header,
+  .admin-candidate-applications-filters,
+  .admin-candidate-application-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-candidate-applications-header-actions,
+  .admin-candidate-applications-clear {
+    width: 100%;
+  }
+
+  .admin-candidate-applications-clear button {
+    width: 100%;
+  }
+
+  .admin-candidate-application-side {
+    align-items: flex-start;
+    min-width: auto;
+    width: 100%;
+  }
+}

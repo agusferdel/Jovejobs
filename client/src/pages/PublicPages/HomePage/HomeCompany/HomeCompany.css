@@ -1,0 +1,268 @@
+.section-company {
+  background-image:
+    linear-gradient(rgb(0 0 0 / 40%)),
+    url('../../../../assets/backgroundHome/homeEm2.png');
+  background-size: cover;
+  background-position: center;
+  height: 91dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-company-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  width: 50%;
+  text-align: center;
+  gap: 1rem;
+
+  h3 {
+    font-size: 1rem;
+    background-color: rgb(237, 233, 254);
+    padding: 10px;
+    border-radius: 9999px;
+    color: var(--btn-color-1);
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 4rem;
+    text-shadow:
+      1px 1px 0 #000,
+      -1px 1px 0 #000,
+      1px -1px 0 #000,
+      -1px -1px 0 #000;
+    text-align: center;
+    font-family: var(--font-secondary);
+  }
+
+  span {
+    color: var(--btn-color-1);
+  }
+}
+
+.section-2-company {
+  background-color: rgb(243, 240, 251);
+  padding: 4rem;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  span {
+    color: var(--text-color-3);
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  >div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+
+  .cardjj {
+    block-size: auto;
+    align-self: stretch;
+    min-inline-size: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h5 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--text-color-3);
+    color: white;
+  }
+
+  p {
+    margin-top: 20px;
+    font-style: italic;
+    color: #b3b3b3;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+}
+
+.section-3-company {
+  background-image:
+    linear-gradient(rgb(0 0 0 / 40%)),
+    url('../../../../assets/backgroundHome/homeEm.png');
+  background-size: cover;
+  background-position: center;
+  padding-block: 6rem;
+  text-align: center;
+
+  h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: white;
+    font-size: 3rem;
+  }
+
+  .section-3-1-company {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 1rem;
+
+    .card-pack-home{
+      display: flex;
+  flex-direction: column;
+  height: auto;
+    }
+
+    .pack-actions {
+    margin-top: auto;
+    }
+ 
+    .cardjj.transparent {
+      block-size: auto;
+      align-self: stretch;
+      min-inline-size: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .btnjj {
+      margin-block-start: auto;
+    }
+
+    p {
+      overflow-wrap: break-word;
+      word-break: break-word;
+    }
+
+     .pack-price {
+     display: flex;
+      align-items: baseline;
+      justify-content: center;
+     }
+
+     .price-amount {
+      font-family: 'anton', 'Arial Black', sans-serif;
+      font-size: 3.2rem;
+      font-weight: 200;
+     line-height: 1;
+     }
+
+     .pack-tax {
+     font-size: 0.75rem;
+     margin-top: 5px;
+     font-weight: bold;
+     opacity: 0.8;
+    }
+
+     .pack-desc {
+     font-size: 0.85rem;
+     line-height: 1.5;
+     flex-grow: 1;
+     max-width: 90%;
+     }
+
+    
+
+   }
+   
+}
+
+
+.links-to-packs{
+  padding-block: 3rem;
+    .link-to-packs{
+      text-decoration: none;
+      color: var(--btn-color-1);
+      font-size: 1rem;
+     background-color: var(--btn-color-light);
+     padding: 10px 30px;
+     border-radius: 9999px;
+     font-weight: bold;
+
+      &:hover{
+      background-color: var(--btn-color-1);
+      color: var(--text-light)
+      }
+    }
+}
+
+    
+
+
+@media (width <=768px) {
+  .section-company {
+    height: auto;
+    min-height: auto;
+    padding-block: 2rem;
+  }
+
+  .section-company-1 {
+    width: 80%;
+
+    h2 {
+      font-size: 4rem;
+    }
+
+    .btn-tlf {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .section-2-company {
+    padding: 2rem 1rem;
+
+    h3 {
+      font-size: 1.6rem;
+    }
+
+    >div {
+      flex-direction: column;
+      align-items: center;
+      inline-size: 100%;
+    }
+
+    .cardjj {
+      inline-size: 100%;
+      max-inline-size: 480px;
+    }
+  }
+
+  .section-3-company {
+    padding-block: 3rem;
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    .section-3-1-company {
+      flex-direction: column;
+      align-items: center;
+      inline-size: 100%;
+
+      .cardjj.transparent {
+        inline-size: 100%;
+        max-inline-size: 480px;
+      }
+    }
+    
+  }
+}
